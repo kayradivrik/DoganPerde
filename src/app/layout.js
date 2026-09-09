@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import MobileActionBar from "@/components/MobileActionBar";
+import CookieBanner from "@/components/CookieBanner";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -128,6 +129,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <WhatsAppButton />
         <MobileActionBar />
+        <CookieBanner />
       </body>
     </html>
   );
