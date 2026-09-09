@@ -1,0 +1,84 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
+  description String
+  category    String
+  imageUrl    String
+  publicId    String   // Cloudinary public ID for deletion
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Lead {
+  id             String   @id @default(auto()) @map("_id") @db.ObjectId
+  name           String
+  phone          String
+  address        String?
+  curtainType    String?
+  status         String   @default("PENDING") // PENDING, CONTACTED, COMPLETED, CANCELLED
+  message        String?
+  leadType       String   @default("APPOINTMENT") // APPOINTMENT, CALCULATOR
+  width          Float?
+  height         Float?
+  estimatedPrice Float?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model AdminUser {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  username     String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+}
+
+model Setting {
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  key   String @unique
+  value String
+}
+
+model HeroSlide {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  image       String
+  title       String
+  subtitle    String
+  description String
+  publicId    String   // Cloudinary public ID for deletion
+  createdAt   DateTime @default(now())
+}
+
+model Testimonial {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  name      String
+  role      String
+  stars     Int      @default(5)
+  text      String
+  createdAt DateTime @default(now())
+}
+
+model BlogPost {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  slug      String   @unique
+  content   String
+  excerpt   String
+  imageUrl  String
+  publicId  String?  // Cloudinary public ID for deletion
+  category  String   @default("NEWS")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
