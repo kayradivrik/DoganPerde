@@ -45,7 +45,7 @@ export const metadata = {
   formatDetection: {
     telephone: true,
     address: true,
-    email: true
+    email: false
   },
   openGraph: {
     title: "Çekmeköy Perdeci - Doğan Perde | Özel Ölçü Perde Tasarımları",
@@ -73,7 +73,6 @@ const localBusinessSchema = {
   "name": "Doğan Perde",
   "alternateName": "Çekmeköy Doğan Perde",
   "telephone": "+905417310749",
-  "email": "info@doganperde.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Şahinbey Cd. Çamlık Mah. No:114 Dük:A (Doğa Parkı Yanı)",

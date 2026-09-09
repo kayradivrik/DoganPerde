@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Phone, Mail, MapPin, Clock, Check, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Check, Send, Building2 } from 'lucide-react';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -17,7 +17,6 @@ export default function ContactPage() {
   const [settings, setSettings] = useState({
     phone1: '0535 485 76 31',
     phone2: '0541 731 07 49',
-    email: 'info@doganperde.com',
     address: 'Şahinbey Cd. Çamlık Mah. No:114 Dük:A (Doğa Parkı Yanı), Çekmeköy / İstanbul',
     workWeekday: 'Pazartesi - Cumartesi: 09:00 - 19:30',
     workSunday: 'Pazar: Kapalı',
@@ -132,19 +131,20 @@ export default function ContactPage() {
             </div>
 
             <div className="flex gap-4 items-start py-5">
-              <Mail size={18} className="text-primary-500 shrink-0 mt-0.5" />
-              <div className="flex flex-col gap-1">
-                <h4 className="font-serif font-bold text-slate-900 text-base">E-posta</h4>
-                <p className="text-xs text-slate-500 font-semibold"><a href={`mailto:${settings.email}`} className="text-slate-800 hover:text-primary-600 font-bold">{settings.email}</a></p>
-              </div>
-            </div>
-
-            <div className="flex gap-4 items-start py-5 last:pb-0">
               <Clock size={18} className="text-primary-500 shrink-0 mt-0.5" />
               <div className="flex flex-col gap-1">
                 <h4 className="font-serif font-bold text-slate-900 text-base">Çalışma Saatleri</h4>
                 <p className="text-xs text-slate-500 font-semibold">{settings.workWeekday}</p>
                 <p className="text-xs text-slate-400 font-semibold">{settings.workSunday}</p>
+              </div>
+            </div>
+
+            <div className="flex gap-4 items-start py-5 last:pb-0 border-t border-slate-200/60 pt-5">
+              <Building2 size={18} className="text-primary-500 shrink-0 mt-0.5" />
+              <div className="flex flex-col gap-1">
+                <h4 className="font-serif font-bold text-slate-900 text-base">Ticari Künye (TTK m.39)</h4>
+                <p className="text-[11px] text-slate-500 font-semibold">Unvan: <span className="text-slate-800 font-bold">Doğan Perde Tasarım & Atölyesi</span></p>
+                <p className="text-[11px] text-slate-500 font-semibold">Vergi D. / MERSİS: <span className="text-slate-800 font-bold">İsteğe Bağlı / Belirtilebilir</span></p>
               </div>
             </div>
 

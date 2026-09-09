@@ -9,7 +9,6 @@ const DEFAULT_SETTINGS = {
   phone1: '0541 731 07 49',
   phone2: '0535 485 76 31',
   whatsapp: '905417310749',
-  email: 'info@doganperde.com',
   address: 'Şahinbey Cd. Çamlık Mah. No:114 Dük:A (Doğa Parkı Yanı), Çekmeköy / İstanbul',
   mapsLink: 'https://www.google.com/maps/search/?api=1&query=Do%C4%9Fan+Perde+%C3%87ekmek%C3%B6y+%C5%9Eahinbey+Caddesi+%C3%87aml%C4%B1k+Mahallesi',
   instagram: 'https://instagram.com/doganperde_cekmekoy',

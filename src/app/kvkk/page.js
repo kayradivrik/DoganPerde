@@ -6,10 +6,10 @@ import { Scale, ArrowLeft } from 'lucide-react';
 export default function KvkkPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-      
+
       {/* Back button */}
-      <Link 
-        href="/" 
+      <Link
+        href="/"
         className="inline-flex items-center gap-2 text-xs font-bold text-slate-500 hover:text-primary-500 transition-colors mb-8"
       >
         <ArrowLeft size={14} />
@@ -17,7 +17,7 @@ export default function KvkkPage() {
       </Link>
 
       <div className="bg-white border border-slate-100 rounded-3xl p-6 sm:p-10 shadow-sm flex flex-col gap-8">
-        
+
         {/* Header */}
         <div className="flex items-center gap-4 border-b border-slate-100 pb-6">
           <div className="w-12 h-12 rounded-2xl bg-orange-50 text-primary-500 flex items-center justify-center shrink-0">
@@ -36,10 +36,16 @@ export default function KvkkPage() {
           </p>
 
           <div className="flex flex-col gap-3">
-            <h2 className="text-base font-bold text-slate-900 font-serif">1. Veri Sorumlusu</h2>
+            <h2 className="text-base font-bold text-slate-900 font-serif">1. Veri Sorumlusu ve Ticari Künye Bilgileri</h2>
             <p>
-              Kişisel verileriniz, veri sorumlusu sıfatıyla Doğan Perde tarafından KVKK’ya uygun olarak işlenmektedir.
+              6698 sayılı KVKK ve 6102 sayılı Türk Ticaret Kanunu (TTK) Madde 39 uyarınca, veri sorumlusu ve ticari işletmeye ait resmi bilgiler aşağıdadır:
             </p>
+            <div className="bg-slate-50 border border-slate-200/80 rounded-2xl p-4 text-xs flex flex-col gap-2 font-semibold text-slate-700 my-1">
+              <div><span className="text-slate-400 font-bold uppercase tracking-wider text-[10px]">Ticaret Unvanı:</span> <span className="text-slate-900 font-bold">Doğan Perde Tasarım & Atölyesi</span></div>
+              <div><span className="text-slate-400 font-bold uppercase tracking-wider text-[10px]">Adres:</span> <span>Şahinbey Cd. Çamlık Mah. No:114 Dük:A (Doğa Parkı Yanı), Çekmeköy / İstanbul</span></div>
+              <div><span className="text-slate-400 font-bold uppercase tracking-wider text-[10px]">Telefon:</span> <span>0535 485 76 31 / 0541 731 07 49</span></div>
+              <div><span className="text-slate-400 font-bold uppercase tracking-wider text-[10px]">Vergi Dairesi & No / MERSİS:</span> <span className="text-slate-500 italic">Müşteri/Şirket tarafından tamamlanabilir</span></div>
+            </div>
           </div>
 
           <div className="flex flex-col gap-3">
@@ -48,7 +54,6 @@ export default function KvkkPage() {
             <ul className="list-disc pl-5 flex flex-col gap-1.5">
               <li>Ad, soyad</li>
               <li>Telefon numarası</li>
-              <li>E-posta adresi</li>
               <li>Adres bilgisi / Talep detayları</li>
               <li>IP adresi ve temel çerez verileri</li>
             </ul>
@@ -75,7 +80,7 @@ export default function KvkkPage() {
           <div className="flex flex-col gap-3">
             <h2 className="text-base font-bold text-slate-900 font-serif">5. İletişim ve Haklarınız</h2>
             <p>
-              KVKK’nın 11. maddesi uyarınca; verilerinizin işlenip işlenmediğini öğrenme, düzeltilmesini veya silinmesini talep etme hakkına sahipsiniz. Talepleriniz için <a href="mailto:info@doganperde.com" className="text-primary-600 font-bold hover:underline">info@doganperde.com</a> e-posta adresi veya <a href="tel:+905354857631" className="text-primary-600 font-bold hover:underline">0535 485 76 31</a> numaralı telefon üzerinden bizimle iletişime geçebilirsiniz.
+              KVKK’nın 11. maddesi uyarınca; verilerinizin işlenip işlenmediğini öğrenme, düzeltilmesini veya silinmesini talep etme hakkına sahipsiniz. Talepleriniz için <a href="tel:+905354857631" className="text-primary-600 font-bold hover:underline">0535 485 76 31</a> veya <a href="tel:+905417310749" className="text-primary-600 font-bold hover:underline">0541 731 07 49</a> numaralı telefonlar ve WhatsApp üzerinden bizimle iletişime geçebilirsiniz.
             </p>
           </div>
 
