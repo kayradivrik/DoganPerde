@@ -41,7 +41,6 @@ export default function PrivacyPolicyPage() {
             <ul className="list-disc pl-5 flex flex-col gap-1.5">
               <li>İsim, soyisim</li>
               <li>Telefon numarası</li>
-              <li>E-posta adresi</li>
               <li>Adres bilgisi (sipariş durumunda)</li>
               <li>IP adresi ve çerez verileri (ziyaret deneyimini iyileştirmek amacıyla)</li>
             </ul>
