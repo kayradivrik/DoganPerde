@@ -54,12 +54,32 @@ export const metadata = {
     address: true,
     email: false
   },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/images/insta_profile.png',
+  },
   openGraph: {
     title: "Çekmeköy Perdeci - Doğan Perde | Özel Ölçü Perde Tasarımları",
     description: "Çekmeköy'ün lider perde mağazası Doğan Perde. Tül, stor, zebra, fon ve akıllı motorlu perde modellerinde ücretsiz keşif ve dikiş atölyesi garantisi.",
+    url: "https://doganperdecekmekoy.com",
     siteName: "Doğan Perde Çekmeköy",
     locale: "tr_TR",
-    type: "website"
+    type: "website",
+    images: [
+      {
+        url: "https://doganperdecekmekoy.com/images/slide1.png",
+        width: 1200,
+        height: 630,
+        alt: "Doğan Perde Çekmeköy Mağaza ve Perde Modelleri",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Çekmeköy Perdeci - Doğan Perde",
+    description: "Çekmeköy özel ölçü tül, stor, zebra ve motorlu perde modelleri.",
+    images: ["https://doganperdecekmekoy.com/images/slide1.png"],
   },
   robots: {
     index: true,
@@ -79,6 +99,9 @@ const localBusinessSchema = {
   "@type": "HomeGoodsStore",
   "name": "Doğan Perde",
   "alternateName": "Çekmeköy Doğan Perde",
+  "url": "https://doganperdecekmekoy.com",
+  "logo": "https://doganperdecekmekoy.com/images/insta_profile.png",
+  "image": "https://doganperdecekmekoy.com/images/slide1.png",
   "telephone": "+905417310749",
   "address": {
     "@type": "PostalAddress",
