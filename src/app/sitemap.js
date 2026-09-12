@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://doganperde.com';
+  const baseUrl = 'https://doganperdecekmekoy.com';
   
   const routes = [
     '',

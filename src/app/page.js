@@ -502,7 +502,7 @@ export default function Home() {
               </div>
               <div>
                 <h4 className="font-bold text-slate-800">E-posta:</h4>
-                <p className="mt-1">info@doganperde.com</p>
+                <p className="mt-1">info@doganperdecekmekoy.com</p>
               </div>
             </div>
           </div>

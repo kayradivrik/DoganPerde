@@ -20,6 +20,13 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://doganperdecekmekoy.com'),
+  alternates: {
+    canonical: '/',
+  },
+  verification: {
+    google: 'googlecc997dfebcfd6787',
+  },
   title: {
     default: "Çekmeköy Perdeci - Doğan Perde | Çekmeköy Tül, Stor, Fon Perde",
     template: "%s | Çekmeköy Doğan Perde"

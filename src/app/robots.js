@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: ['/admin/', '/studio/', '/api/'],
     },
-    sitemap: 'https://doganperde.com/sitemap.xml',
+    sitemap: 'https://doganperdecekmekoy.com/sitemap.xml',
   };
 }
